@@ -1,0 +1,67 @@
+.section.section-best {
+  padding-bottom: 60px;
+  padding-top: 30px;
+  @media screen and (min-width: 768px) {
+    padding-top: 60px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 0;
+    padding-top: 94px;
+  }
+}
+
+/*.best-work__best-list:not(:last-child) {
+  margin-right: 30px;
+}*/
+
+.centered {
+  @media screen and (max-width: 767px) {
+    text-align: center;
+  }
+}
+
+.anten,
+.time,
+.computer,
+.astronavt {
+  display: flex;
+  background-color: #f5f4fa;
+  height: 120px;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  justify-content: center;
+  align-items: center;
+}
+
+.anten__logo,
+.time__logo,
+.astronavt__logo,
+.computer__logo {
+  width: 70px;
+  height: 70px;
+}
+
+.best-work {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+    margin-top: -30px;
+  }
+}
+
+.best-work__best-list {
+  width: 100%;
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+  @media screen and (min-width: 768px) {
+    flex-basis: calc(100% / 2 - 30px);
+    margin-left: 30px;
+  }
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc(100% / 4 - 30px);
+  }
+}

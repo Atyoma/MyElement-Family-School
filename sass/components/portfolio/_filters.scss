@@ -1,0 +1,61 @@
+.btn {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+  background-color: #f5f4fa;
+  color: #212121;
+  cursor: pointer;
+  border-radius: 4px;
+  min-width: 73px;
+  padding: 6px 22px;
+  border: 0;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: #ffffff;
+    background-color: var(--main-akcent-color);
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  }
+}
+
+.filters {
+  &__workslist {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+    @media screen and (max-width: 767px) {
+      flex-wrap: wrap;
+      justify-content: start;
+    }
+  }
+  &__unit:not(:last-child) {
+    margin-right: 8px;
+    @media screen and (max-width: 767px) {
+      margin-bottom: 15px;
+    }
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .section.portfolio {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .filters__workslist {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .filters__workslist {
+    margin-bottom: 80px;
+  }
+}
